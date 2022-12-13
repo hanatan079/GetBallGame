@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PaddleScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float speed;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //矢印キーの押下でパドルを左右に動かせるようにする
-        transform.position += new Vector3(Input.GetAxis("Horizontal") * Time.deltaTime, 0f, 0f);
+        //矢印キーの押下でパドルを左右に動かせるようにする (deltatime前回のフレームからの経過時間)
+        transform.position += new Vector3(Input.GetAxis("Horizontal") * Time.deltaTime * speed, 0f, 0f);
     }
 }
