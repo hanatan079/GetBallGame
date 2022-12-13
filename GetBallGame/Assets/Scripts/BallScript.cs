@@ -20,13 +20,15 @@ public class BallScript : MonoBehaviour
         //位置を指定(-1→手前に転がす為)
         transform.position += new Vector3(0f, 0f, -1 * speed * Time.deltaTime);
 
+    }
+
         //衝突判定
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.GameObject.CompareTag("Paddle"))
+            if (collision.gameObject.CompareTag("Paddle"))
             {
-                Destroy(GameObject);
+                Destroy(gameObject);
             }
         }
-    }
+
 }
