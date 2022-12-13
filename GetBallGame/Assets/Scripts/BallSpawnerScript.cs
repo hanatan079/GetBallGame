@@ -14,6 +14,12 @@ public class BallSpawnerScript : MonoBehaviour
         Instantiate(ball, transform.position, transform.rotation);
     }
 
+    //一定時間でボールを生成する関数
+    void SpawnBall()
+    {
+        Instantiate(ball, new Vector3(Random.Range(-5f, 5f), transform.position.y, transform.position.z), transform.rotation);
+    }
+
     void Update()
     {
         
