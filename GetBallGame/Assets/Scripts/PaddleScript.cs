@@ -13,6 +13,7 @@ public class PaddleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //矢印キーの押下でパドルを左右に動かせるようにする
+        transform.position += new Vector3(Input.GetAxis("Horizontal") * Time.deltaTime, 0f, 0f);
     }
 }
