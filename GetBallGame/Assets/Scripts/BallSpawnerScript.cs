@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class BallSpawnerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    //インスペクタで呼び出しballスクリプトと結び付けれるようにする
+    public GameObject ball;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
