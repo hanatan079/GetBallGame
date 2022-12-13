@@ -10,7 +10,8 @@ public class BallSpawnerScript : MonoBehaviour
 
     void Start()
     {
-        
+        //インスタンスの生成
+        Instantiate(ball, transform.position, transform.rotation);
     }
 
     void Update()
