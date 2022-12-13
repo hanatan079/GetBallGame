@@ -10,8 +10,8 @@ public class BallSpawnerScript : MonoBehaviour
 
     void Start()
     {
-        //インスタンスの生成
-        Instantiate(ball, transform.position, transform.rotation);
+        //ゲーム開始０秒から1秒ごとにボールを生成する関数を呼び出す
+        InvokeRepeating("SpawnBall", 0f, 1f);
     }
 
     //一定時間でボールを生成する関数
