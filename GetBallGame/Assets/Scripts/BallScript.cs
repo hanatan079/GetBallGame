@@ -28,6 +28,9 @@ public class BallScript : MonoBehaviour
             if (collision.gameObject.CompareTag("Paddle"))
             {
                 Destroy(gameObject);
+
+                //オブジェクトを縮小する
+                collision.gameObject.transform.localScale -= new Vector3(Random.Range(0.2f, 1.0f), 0f, 0f);
             }
         }
 
