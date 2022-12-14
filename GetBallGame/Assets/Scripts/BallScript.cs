@@ -29,8 +29,14 @@ public class BallScript : MonoBehaviour
             {
                 Destroy(gameObject);
 
-                //オブジェクトを縮小する
+                //オブジェクトを0.2~1.0の間でランダムに縮小する
                 collision.gameObject.transform.localScale -= new Vector3(Random.Range(0.2f, 1.0f), 0f, 0f);
+
+                //xが１の方が大きくなったら、1.0の正方形にする(それ以上小さくならない)
+                if (collision.gameObject.transform.localScale.x < 1.0f)
+                {
+                    collision.gameObject.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+                }
             }
         }
 
