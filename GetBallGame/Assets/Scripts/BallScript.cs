@@ -6,6 +6,7 @@ public class BallScript : MonoBehaviour
 {
 
     private float speed;
+    public GameObject[] balls;
 
     // Start is called before the first frame update
     void Start()

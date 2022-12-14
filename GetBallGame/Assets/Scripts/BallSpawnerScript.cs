@@ -8,6 +8,7 @@ public class BallSpawnerScript : MonoBehaviour
     //インスペクタで呼び出しballスクリプトと結び付けれるようにする
     public GameObject ball;
 
+
     void Start()
     {
         //ゲーム開始０秒から1秒ごとにボールを生成する関数を呼び出す
@@ -20,8 +21,4 @@ public class BallSpawnerScript : MonoBehaviour
         Instantiate(ball, new Vector3(Random.Range(-5f, 5f), transform.position.y, transform.position.z), transform.rotation);
     }
 
-    void Update()
-    {
-        
-    }
 }
