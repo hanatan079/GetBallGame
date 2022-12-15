@@ -6,6 +6,8 @@ public class BallScript : MonoBehaviour
 {
 
     private float speed;
+    
+    //インスペクタで呼び出しballスクリプトと結び付けれるようにする
     public GameObject[] balls;
 
     // Start is called before the first frame update
@@ -13,6 +15,9 @@ public class BallScript : MonoBehaviour
     {
         //5~15の間でランダムなスピード
         speed = Random.Range(5f,15f);
+
+        //ゲーム開始０秒から1秒ごとにボールを生成する関数を呼び出す
+        InvokeRepeating("SpawnBall", 0f, 1f);
     }
 
     // Update is called once per frame
@@ -40,5 +45,12 @@ public class BallScript : MonoBehaviour
                 }
             }
         }
+
+            //一定時間でボールを生成する関数
+    void SpawnBall()
+    {
+        Instantiate(balls[], new Vector3(Random.Range(-5f, 5f), transform.position.y, transform.position.z), transform.rotation);
+    }
+
 
 }

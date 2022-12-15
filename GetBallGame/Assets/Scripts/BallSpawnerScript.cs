@@ -5,10 +5,6 @@ using UnityEngine;
 public class BallSpawnerScript : MonoBehaviour
 {
 
-    //インスペクタで呼び出しballスクリプトと結び付けれるようにする
-    public GameObject ball;
-
-
     void Start()
     {
         //ゲーム開始０秒から1秒ごとにボールを生成する関数を呼び出す
