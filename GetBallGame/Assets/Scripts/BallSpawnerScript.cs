@@ -15,15 +15,6 @@ public class BallSpawnerScript : MonoBehaviour
         InvokeRepeating("SpawnBall", 0f, 1f);
     }
 
-/*
-    //一定時間でボールを生成する関数
-    void SpawnBall()
-    {
-        Instantiate(balls[3], new Vector3(Random.Range(-5f, 5f), transform.position.y, transform.position.z), transform.rotation);
-    }
-
-*/
-    
     //ランダムにボールを1つ選ぶ関数
     GameObject GetRandomBall()
     {
@@ -41,7 +32,8 @@ public class BallSpawnerScript : MonoBehaviour
     //選ばれたブロックを生成する関数
     public GameObject SpawnBall()
     {
-        GameObject ball = Instantiate(GetRandomBall(),transform.position, Quaternion.identity);
+        //一定時間でボールを生成する
+        GameObject ball = Instantiate(GetRandomBall(), new Vector3(Random.Range(-5f, 5f), transform.position.y, transform.position.z), transform.rotation);
         if (ball)
         {
             return ball;
