@@ -35,5 +35,20 @@ public class BallSpawnerScript : MonoBehaviour
         }
     }
 
+    //選ばれたブロックを生成する関数
+    public GameObject SpawnBall()
+    {
+        GameObject ball = Instantiate(GetRandomBall(),transform.position, Quaternion.identity);
+        if (ball)
+        {
+            return ball;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+
 
 }
