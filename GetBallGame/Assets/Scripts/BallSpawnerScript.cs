@@ -6,7 +6,7 @@ public class BallSpawnerScript : MonoBehaviour
 {
 
     //インスペクタで呼び出しballスクリプトと結び付けれるようにする
-    public GameObject ball;
+    public GameObject[] balls;
 
 
     void Start()
