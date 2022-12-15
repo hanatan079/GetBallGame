@@ -20,6 +20,11 @@ public class BallScript : MonoBehaviour
         //位置を指定(-1→手前に転がす為)
         transform.position += new Vector3(0f, 0f, -1 * speed * Time.deltaTime);
 
+        //パドルを超えたら一時停止
+        if (transform.position.z < -13.0f)
+        {
+            Time.timeScale = 0;
+        }
     }
 
         //衝突判定
