@@ -20,5 +20,20 @@ public class BallSpawnerScript : MonoBehaviour
     {
         Instantiate(balls[3], new Vector3(Random.Range(-5f, 5f), transform.position.y, transform.position.z), transform.rotation);
     }
+    
+    //ランダムにボールを1つ選ぶ関数
+    GameObject GetRandomBall()
+    {
+        int i = Random.Range(0, balls.Length);
+        if (balls[i])
+        {
+            return balls[i];
+        }
+        else
+        {
+            return null;
+        }
+    }
+
 
 }
