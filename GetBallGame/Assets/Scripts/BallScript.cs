@@ -24,7 +24,8 @@ public class BallScript : MonoBehaviour
         //パドルを超えたら一時停止
         if (transform.position.z < -13.0f)
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 
