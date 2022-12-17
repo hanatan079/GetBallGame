@@ -7,4 +7,9 @@ public class CountTextScript : MonoBehaviour
 {
     int score = 0;
     public Text scoreText;
+
+    public void ADDScore()
+    {
+        score++;
+    }
 }
