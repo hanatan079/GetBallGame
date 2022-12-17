@@ -23,4 +23,10 @@ public class ScoreScript : MonoBehaviour
     {
         
     }
+
+    public void AddScore()
+    {
+        score++;
+    }
+
 }
