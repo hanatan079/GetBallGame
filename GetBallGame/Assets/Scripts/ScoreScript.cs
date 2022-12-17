@@ -7,6 +7,10 @@ public class ScoreScript : MonoBehaviour
     //初期値設定
     int score = 0;
 
+    //テキストを呼び出せるようにする
+    public Text scoreText;
+
+
     // Start is called before the first frame update
     void Start()
     {
