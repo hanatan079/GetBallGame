@@ -8,6 +8,9 @@ public class BallScript : MonoBehaviour
 
     private float speed;
 
+    //初期設定
+    GameObject scoreObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,8 @@ public class BallScript : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Paddle"))
             {
+                
+                scoreObject.GetComponent<ScoreScript>().AddScore();
                 Destroy(gameObject);
 
                 //オブジェクトを0.2~1.0の間でランダムに縮小する
