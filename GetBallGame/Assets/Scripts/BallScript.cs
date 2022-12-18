@@ -16,6 +16,8 @@ public class BallScript : MonoBehaviour
     {
         //5~15の間でランダムなスピード
         speed = Random.Range(5f,15f);
+
+        scoreObject = GameObject.Find("Score");
     }
 
     // Update is called once per frame
