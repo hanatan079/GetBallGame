@@ -30,7 +30,7 @@ public class BallScript : MonoBehaviour
         if (transform.position.z < -13.0f)
         {
             //Time.timeScale = 0;
-            SceneManager.LoadScene("LizardoSene");
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 
