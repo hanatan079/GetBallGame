@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
     //初期値設定
-    int score = 0;
+    public static int score = 0;
 
     //テキストを呼び出せるようにする
     public Text scoreText;
