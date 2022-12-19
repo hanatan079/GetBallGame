@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreScript : MonoBehaviour
 {
     //初期値設定
-    int score = 0;
+    public static int score = 0;
 
     //テキストを呼び出せるようにする
     public Text scoreText;
@@ -28,6 +29,14 @@ public class ScoreScript : MonoBehaviour
     public void AddScore()
     {
         score += 100;
+        scoreText.text = string.Format("Score{0}", score);
     }
+
+    //
+    public static int getScore()
+    {
+        return score;
+    }
+
 
 }

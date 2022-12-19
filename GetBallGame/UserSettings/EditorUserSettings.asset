@@ -6,15 +6,26 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       value: 54050350540508030f0b087b4677084810161d78282a2761797c4b60b4e26c61
+=======
+      value: 0103055e01540a0a5a59547711775b47174e417d797d27682c7e4b64b4b4376d
+>>>>>>> Lizardo
       flags: 0
     RecentlyUsedSceneGuid-1:
-      value: 0103055e01540a0a5a59547711775b47174e417d797d27682c7e4b64b4b4376d
+      value: 50540600540c58085f5c0a2143770f47154e412c747f76692870446bb7e4646f
       flags: 0
     RecentlyUsedSceneGuid-2:
+      value: 54050350540508030f0b087b4677084810161d78282a2761797c4b60b4e26c61
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 5250565056065c0f0c0b557543770713404f1b7f2f7f7534742a1964b2e56d3d
+      flags: 0
+    RecentlyUsedSceneGuid-4:
       value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
       flags: 0
+<<<<<<< HEAD
 =======
       value: 50540600540c58085f5c0a2143770f47154e412c747f76692870446bb7e4646f
       flags: 0
@@ -34,6 +45,11 @@ EditorUserSettings:
       value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
       flags: 0
 >>>>>>> Stashed changes
+=======
+    RecentlyUsedSceneGuid-5:
+      value: 5700035303035e0f5c595c7442770d4340154a2e7b7f2761797f4d65bbb76060
+      flags: 0
+>>>>>>> Lizardo
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0

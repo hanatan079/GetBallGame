@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
     guid: b218dac17785a4d7a99755a8a76764c5
+  - enabled: 1
+    path: Assets/Scenes/LizardoSene.unity
+    guid: 4175f674170624236b2d77a146069748
   m_configObjects: {}
