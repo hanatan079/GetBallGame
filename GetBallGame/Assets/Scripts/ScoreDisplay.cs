@@ -8,6 +8,9 @@ public class ScoreDisplay : MonoBehaviour
     //呼び出可能変数作成
      public Text ScoreText;
 
+    //スコア変数作成
+    int score;
+
     // Start is called before the first frame update
     void Start()
     {
