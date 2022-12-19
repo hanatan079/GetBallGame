@@ -30,4 +30,11 @@ public class ScoreScript : MonoBehaviour
         score += 100;
     }
 
+    //
+    public static int getScore()
+    {
+        return score;
+    }
+
+
 }
