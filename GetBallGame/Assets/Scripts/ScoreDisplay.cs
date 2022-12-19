@@ -5,8 +5,6 @@ using UnityEngine;
 public class ScoreDisplay : MonoBehaviour
 {
 
-    //呼び出可能変数作成
-     public Text ScoreText;
 
     //スコア変数作成
     int score;
@@ -15,7 +13,6 @@ public class ScoreDisplay : MonoBehaviour
     void Start()
     {
          score = ScoreScript.getScore();
-        ScoreText.text = string.Format("Score{0}", score);
     }
 
     // Update is called once per frame
