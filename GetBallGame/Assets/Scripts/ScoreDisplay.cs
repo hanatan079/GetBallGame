@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ScoreDisplay : MonoBehaviour
 {
+
+    //呼び出可能変数作成
+     public Text ScoreText;
+
     // Start is called before the first frame update
     void Start()
     {
