@@ -15,6 +15,7 @@ public class ScoreDisplay : MonoBehaviour
     void Start()
     {
          score = ScoreScript.getScore();
+        ScoreText.text = string.Format("Score{0}", score);
     }
 
     // Update is called once per frame
