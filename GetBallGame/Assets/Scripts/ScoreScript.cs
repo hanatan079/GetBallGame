@@ -28,6 +28,7 @@ public class ScoreScript : MonoBehaviour
     public void AddScore()
     {
         score += 100;
+        scoreText.text = string.Format("Score{0}", score);
     }
 
     //

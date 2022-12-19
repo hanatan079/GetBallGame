@@ -14,10 +14,7 @@ public class ScoreDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //関数呼び出し
          score = ScoreScript.getScore();
-         //リザルド表示
-         ScoreText.text = string.Format("Score{0}", score);
     }
 
     // Update is called once per frame
