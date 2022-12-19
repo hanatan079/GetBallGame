@@ -14,7 +14,7 @@ public class ScoreDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+         score = ScoreScript.getScore();
     }
 
     // Update is called once per frame
