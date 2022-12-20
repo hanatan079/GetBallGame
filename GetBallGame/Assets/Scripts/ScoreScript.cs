@@ -39,4 +39,9 @@ public class ScoreScript : MonoBehaviour
     }
 
 
+    public void RePlayGame()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+
 }
