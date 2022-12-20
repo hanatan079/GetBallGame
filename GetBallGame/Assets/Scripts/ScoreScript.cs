@@ -38,10 +38,13 @@ public class ScoreScript : MonoBehaviour
         return score;
     }
 
-
+    //ボタン押下でメインシーンへ遷移
     public void RePlayGame()
     {
         SceneManager.LoadScene("MainScene");
+        //スコアリセット
+        score = 0;
+
     }
 
 }
