@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class AutomaticMovement : MonoBehaviour
 {
+    //経過時間カウント用
+     private float step_time;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,5 @@ public class AutomaticMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
