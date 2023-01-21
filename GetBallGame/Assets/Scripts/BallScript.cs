@@ -32,6 +32,7 @@ public class BallScript : MonoBehaviour
             //Time.timeScale = 0;
             SceneManager.LoadScene("GameOverScene");
         }
+
     }
 
         //衝突判定

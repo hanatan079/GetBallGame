@@ -24,6 +24,7 @@ public class ScoreScript : MonoBehaviour
     {
         //スコア表示
         scoreText.text = "SCORE: " + score.ToString();
+        
     }
 
     public void AddScore()
